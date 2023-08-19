@@ -67,7 +67,7 @@ If there are more than 1000 in unallocated funds increment by 50, otherwise incr
 `%unallocated` - The amount of funds not allocated to any goal
 
 
-**Supported Arithmetic & Functions**
+**Supported arithmetic & functions**
 
 This feature is implemented with the Math.js Library, please check the [syntax page](https://mathjs.org/docs/expressions/syntax.html) for details on constructing expressions
 
