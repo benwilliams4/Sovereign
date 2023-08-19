@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sovereign</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="dependencies/neutralino/neutralino.js"></script>
+    <script src="dependencies/MathJS/math.js"></script>
+    <script type="module" src="js/main.js" defer></script>
+    <script src="dependencies/neutralino/main.js"></script>
+</head>
+
+<body class="hidden">
+    <div id="overlay" class="hidden"></div>
+    <div id="menubar"></div>
+
+<!-- Start of Pages -->
+    <div id="page-accounts">
+        <h1>Accounts</h1>
+        <button id="btn-new-account">New Account</button>
+        <div id="table-accounts"></div>
+        <button id="btn-save-accounts" disabled>Update Accounts</button>
+        <button id="btn-reset-accounts" class="secondary">Clear Changes</button>
+    </div>
+    <div id="page-savings">
+        <h1>Savings</h1>
+        <button id="btn-new-saving">New Saving Goal</button>
+        <div id="table-savings"></div>
+        <button id="btn-update-savings" disabled>Update Savings</button>
+        <button id="btn-reset-savings" class="secondary">Clear Changes</button>
+    </div>
+
+<!----
+    <div id="page-settings">
+        <h1>Settings</h1>
+    </div>
+<!---->
+
+<!-- End of Pages -->
+
+<!-- Start of Popup Forms -->
+
+    <div id="form-new-account">
+        <h1>New Account</h1>
+        <label for="">Account Name</label>
+        <input type="text" name="name">
+        <label>Type</label>
+        <select name="type">
+            <option value="Asset">Asset</option>
+            <option value="Liability">Liability</option>
+        </select>
+        <p class="hidden message"></p>
+        <button>Create Account</button>
+        <button class="secondary">Cancel</button>
+
+    </div>
+    <div id="form-new-saving">
+        <h1>New Saving Goal</h1>
+        <label for="">Name</label>
+        <input type="text" name="name">
+        <label>Goal Amount</label>
+        <input type="number" name="goal">
+        <h2>Saving Plan</h2>
+        <label>Status</label>
+        <select name="status">
+            <option value="Enabled">Enabled</option>
+            <option value="Disabled" selected="selected">Disabled</option>
+        </select>
+        <label>Frequency</label>
+        <select name="frequency">
+            <option value="Monthly">Monthly</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Daily">Daily</option>
+        </select>
+        <label for="">Amount<!--<a href="#">Learn more</a>--></label>
+        <input class="code" type="text" name="formula">
+        <label>Stop when goal is reached</label>
+        <select name="autostop">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <p class="hidden message"></p>
+        <button>Create Saving Goal</button>
+        <button class="secondary">Cancel</button>
+
+    </div>
+<!-- End of Popup Forms -->
+    <!----
+    <div id="popup-sps-warning>
+        <h1>Notice</h1><p>There were not enough funds to run all your saving plans.</p>
+        <button>Dismiss</button>
+    </div>
+    <!---->
+</body>
+
+</html>

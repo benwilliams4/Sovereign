@@ -1,0 +1,222 @@
+body
+{font-family:calibri; margin:0px; user-select:none; cursor:default;}
+
+#overlay
+{position:fixed; z-index:98; width:100%;height:100%; background-color:rgba(0,0,0,0.6)}
+/* only .popup class should have a higher z-index of 99 */
+
+
+
+/*General style classes */
+
+
+.neg
+{color:red;}
+
+.pos
+{color:green;}
+
+.error
+{background-color:#ffcccc; color:#990000; }
+
+.hidden
+{display:none;}
+
+.code
+{font-family:monospace;}
+
+
+
+/* Button Elements - General */
+
+
+
+button
+{color:#fff; background-color: dodgerblue; margin:5px; padding:5px; border:none; cursor:pointer; border-radius: 4px; min-width:40px;}
+
+button:hover
+{background-color:midnightblue;}
+
+button:disabled
+{background-color:#eee; color:#888; cursor:default;}
+
+button.secondary
+{background-color:#ddd; color:#222;}
+
+button.secondary:hover
+{background-color:#ccc;}
+
+button.action
+{background-color:#d33;}
+
+button.action:hover
+{background-color:#800;}
+
+
+
+
+/*Menu bar */
+
+
+#menubar
+{background-color:#ccd;}
+
+#menubar>div
+{display:inline-block; padding:10px; cursor:pointer;}
+
+#menubar>div:hover
+{background-color:#448; color:#fff;}
+
+#menubar>div.active
+{background-color:#fff; color:#000; font-weight:bold;}
+
+
+
+
+/* Page - general */
+
+
+[id|='page']
+{margin:20px;}
+
+[id|='page']>div
+{margin:20px 0px;}
+
+
+
+/*All Tables */
+
+
+[id|="table"]>div>div
+{display:inline-block; padding:10px; width:100px;}
+
+[id|="table"]>div>div:first-child
+{width:200px;} /*Table Header */
+
+[id|="table"]>div>div>input
+{padding:5px; width:100px;}
+
+[id|="table"]>div:first-child
+{font-weight: bold;} /*Headers Row */
+
+[id|="table"]>.account:nth-child(2n)
+{background-color:#f8f8f8;} /*Alternate row colour*/
+
+[id|="table"] input
+{text-align: right;} /* right align inputs */
+
+[id|="table"]>div:last-child
+{font-weight: bold;  border-top:solid; border-top-width:2px; border-color:#aaa;} /*Table Footer */
+
+/*right align balance and change columns*/
+[id|="table"]>div>div:nth-child(2),
+[id|="table"]>div>div:nth-child(3)
+{text-align: right;}
+
+[id|="table"] span
+{padding:10px;}
+
+/*Table Accounts / Savings - show edit/delete option */
+
+[id|="table"]>div>div:last-child
+{display:none;}
+
+[id|="table"]>.account:hover>div:last-child
+{display:inline-block; color:#ccc; cursor:pointer;}
+
+[id|="table"]>.account>div:last-child>span:nth-child(1):hover
+{color:royalblue;}
+
+[id|="table"]>.account>div:last-child>span:nth-child(2):hover
+{color:red;}
+
+
+/*Accounts Table*/
+
+#table-accounts>div.liability>div:first-child
+{font-style:italic;} /* Make Liabilities italic */
+
+
+/* Table Savings */
+
+/*Goal and Saving Plan column */
+#table-savings>div>div:nth-child(5),
+#table-savings>div>div:nth-child(6)
+{text-align: right;}
+
+/*Goal Column */
+#table-savings>div>div:nth-child(5)
+{width:50px;} /*make narrower */
+
+/*Progress bar column */
+#table-savings>div>div:nth-child(4)
+{width:150px;} /*Make progress bar cell bigger*/
+
+.meter-border
+{width:90%; border:solid; border-width:1px; border-color:#888; height:100%; padding:0px; margin:0px; display:inline-block; margin:0px 5%;}
+
+.meter-fill
+{background-color:green; height:10px; margin:0px; max-width: 100%; min-width:0%;}
+
+
+
+
+/*Forms - General */
+
+
+[id|="form"]>h1
+{font-size:1.5em;}
+
+[id|="form"]>h2
+{font-size:1em;}
+
+[id|="form"]>label
+{font-weight: bold; margin: 3px 0px;}
+
+[id|="form"]>label>a
+{font-weight:normal; text-decoration:none; color:#44f; font-size:0.8em;}
+
+[id|="form"]>label,
+[id|="form"]>input,
+[id|="form"]>select
+{display:block; width:95%;}
+
+[id|="form"]>input,
+[id|="form"]>select
+{padding:5px; margin-bottom:20px}
+
+[id|="form"]>p
+{padding:5px; border:solid; border-width:1px; border-radius:4px;}
+
+
+/*Popups*/
+
+.popup
+{border:solid;
+border-width:1px;
+border-color:#fff;
+border-radius:4px;
+box-shadow:0px 0px 25px #222;
+width:400px; padding:20px;
+background-color:#fff;
+z-index:99;
+position:absolute;
+left:50%;
+top:5%;
+margin-left:-210px;}
+
+
+
+/* Hide Arrows from number fields: */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
