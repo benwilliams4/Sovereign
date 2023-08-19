@@ -25,7 +25,7 @@ Use this tab to keep a record of what bank accounts you have and their balance. 
 
 ![Accounts](img/accounts.jpg)
 
-#### Creating an account
+### Creating an account
 When creating an account you will be prompted to provide a 'name' and 'type' for the account.
 The 'type' field allows you to specify whether the account is an asset or a liability. Selecting liability means the balance of the account will count negatively towards your total account balance thus reducing the amount you can allocate to saving goals. This can be useful if you wish to track a credit card balance.
 ![Accounts](img/new-account.jpg)
@@ -35,14 +35,14 @@ The 'type' field allows you to specify whether the account is an asset or a liab
 Use this tab to allocate funds from your accounts towards specific goals. Make sure to click 'Update Savings' whenever you wish to save any manual changes made to the balances. Adjustments made by saving plans are saved automatically.
 ![Accounts](img/savings.jpg)
 
-#### Creating a saving goal
+### Creating a saving goal
 When creating a saving goal you will be prompted to provide a 'name' and 'goal amount', you will also be given the option to set up a saving plan.
 
-##### Creating a saving plan
+### Creating a saving plan
 You can create a saving plan to increase the balance of the goal by a defined amount on a daily, weekly or monthly basis. If 'Stop when goal is reached' is set, then no funds will be added which take the balance above the goal amount specified.
 ![Accounts](img/new-sg.jpg)
 
-###### Using variables and expressions to define the saving plan amount
+### Using variables and expressions to define the saving plan amount
 Instead of defining how much the saving plan will increment the goal by as a numeric value, expressions can be used to dynamically calculate this.
 
 **Examples**
