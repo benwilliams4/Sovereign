@@ -10,7 +10,7 @@ Some banking apps have in recent years offerred the ability to create sub-accoun
 
 **Desktop Version**
 
-The desktop edition of Sovereign is recommended for general use and can be downloaded [here](). The application is portable and does not require any installation.
+The desktop edition of Sovereign is recommended for general use and can be downloaded [here](https://github.com/benwilliams4/Sovereign/releases/tag/v0.1). The application is portable and does not require any installation.
 
 **Web Server**
 
