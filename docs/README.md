@@ -1,7 +1,7 @@
 # Sovereign: Personal Savings Management Tool
 ## About
-Sovereign is a personal finance tool written in HTML, CSS and JavaScript using [Neutralino.JS](https://github.com/neutralinojs/neutralinojs) to provide a native desktop experience.
-It offers the user the ability to maintain a balance sheet of their financial account(s) and allocate funding towards various saving goals. Adding funds to a goal can be done either on an ad hoc basis or by setting up a saving plan to increase the amount on a regular schedule.
+Sovereign is a personal finance tool written in HTML, CSS and JavaScript using [Neutralinojs](https://github.com/neutralinojs/neutralinojs) to provide a native desktop experience.
+It offers the user the ability to maintain an overview of their financial account(s) and allocate funding towards various saving goals. Adding funds to a goal can be done either on an ad hoc basis or by setting up a saving plan to increase the amount on a regular schedule.
 
 ## Background
 Some banking apps have in recent years offerred the ability to create sub-accounts or "spaces" to allow their customers to organise their finances in ways which would previously have meant setting up multiple bank accounts and incurring significant administrative effort. However, these features are usually only available for low-interest current accounts and a decision to switch bank accounts would mean recreating the sub-accounts with the new institution (assuming they provide such a feature).  Sovereign therefore aims to separate the task of organising the intended use for funds from where you decide to keep them.
