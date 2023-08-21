@@ -68,8 +68,8 @@ class UserInterface {
         document.getElementsByTagName("body")[0].classList.remove("hidden");
     }
 
-    //called by main.js if mode is set to use Neutrilino.Js
-    setupForNeutrilino() {
+    //called by main.js if mode is set to use Neutralino.Js
+    setupForNeutralino() {
         this.disableContextMenu();
     }
 

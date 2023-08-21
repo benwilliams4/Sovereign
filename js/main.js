@@ -24,7 +24,7 @@ var onDataLoad = function () {
 
     //Show Interface
     if (config.useNeutralino) {
-        ui.setupForNeutrilino();
+        ui.setupForNeutralino();
     }
     ui.show();
 
