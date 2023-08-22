@@ -7,11 +7,11 @@ class TableBodyRow extends TableRow {
         this.entry = Entry;
         this.element = document.createElement("div");
     }
-    
+
     getInputValue() {
         return Number(this.element.getElementsByTagName("input")[0].value);
     }
-    
+
     getChangeState() {
         return this.getInputValue() - this.entry.getBalance();
     }
@@ -35,9 +35,8 @@ class TableBodyRow extends TableRow {
         this.element.getElementsByClassName("change")[0].innerHTML = formatted;
         this.applyChangeColor(); // Defined in child class
     }
-    
+
     saveState() {
-        console.log("Current Value: "+this.getInputValue());
         this.entry.updateBalance(this.getInputValue());
     }
 
@@ -56,7 +55,7 @@ class TableBodyRow extends TableRow {
             r.delete();
         });
     }
-    
+
     addEditEventListener() {
         //Select first span of 4th child div
         var ed = this.element.querySelector("span:nth-child(1)");
@@ -68,7 +67,7 @@ class TableBodyRow extends TableRow {
 
         });
     }
-    
+
     addInputChangeEventListener() {
         var i = this.element.getElementsByTagName("input")[0];
         var Table = this.table;
