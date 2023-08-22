@@ -37,6 +37,7 @@ class TableBodyRow extends TableRow {
     }
     
     saveState() {
+        console.log("Current Value: "+this.getInputValue());
         this.entry.updateBalance(this.getInputValue());
     }
 

@@ -16,12 +16,13 @@ class SavingTableRow extends TableBodyRow {
         //Parameters for number to currency formatting
         var mtparams = {
             "signPositives": false,
-            "addThousandSeparator": true,
+            "addThousandSeparator": false,
             "removeRedundantDecimal": true
         };
         
         //Apply number to currency formatting
         balance = MathTools.numberToCurrency(balance, mtparams);
+        mtparams.addThousandSeparator = true;
         goal = MathTools.numberToCurrency(goal, mtparams);
 
         //Create the row
